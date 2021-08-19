@@ -15,12 +15,12 @@ function AuthHome (){
                         
                             <div className="log-in-wrapper">
                                 <Link to="/login">
-                                    <h2 className="log-in">Log In</h2></Link>
+                                    <h2 className="log-in">Log Back In!</h2></Link>
                             </div>
                             
                             <div className="sign-up-wrapper">
                                 <Link to="/registerpath">
-                                    <h2 className="sign-up">Sign Up</h2></Link>
+                                    <h2 className="sign-up">Sign Up Now!</h2></Link>
                             </div>
 
                     </div>

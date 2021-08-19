@@ -11,14 +11,18 @@
     height: 100vh; 
 }
 .login-view-logo{
-    height:auto;
-    width:auto;
+    height:25vh;
+    width:25vw;
     margin-top: 40px;
 }
 .login-view-login-details-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
+    /* border: 3px solid #73AD21; */
+    /* margin-top: 10%; */
+    height: 30vh;
 }
 .login-view-login-details-email-container input{
     margin-top: 10px;

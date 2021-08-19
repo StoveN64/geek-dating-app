@@ -15,34 +15,39 @@
 }
 /* Logo */
 .main-logo{
-    height:auto;
-    width:auto;
-    margin-top: 40px;
+    height: 80vh;
+    width:80vw;
+    border: black;
+    /* margin-bottom: 20px; */
 }
 
 
 /* Options Container */
 .auth-view-options-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* margin-top: 0vh; */
+    /* flex-direction: column; */
+    justify-content: space-around;
+    margin-bottom: 1px;
+    border: black;  
 }
-
+/* Log-In */
 .log-in-wrapper{
     margin: 20px;
-    width: 75px;
+    width: 100px;
     align-self: center;
+    display: table;
+    text-align: center;
+}
+.log-in{
+    padding: 5px;
     border: 2px solid rgb(97, 198, 146);
     border-radius: 10%;
     box-shadow: -3px 3px 3px 1px rgb(62,62, 62);
-}
-/* Log-In */
-.log-in{
-    /* border: 2px solid black ; */
-    padding: 5px;
-    width: auto;
     font-family: 'Space Grotesk';
+    height: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .log-in:hover{
@@ -50,19 +55,25 @@
     transform: scale(1.05);
 }
 
+/* Sign-Up */
+
 .sign-up-wrapper{
     margin: 20px;
-    width: 75px;
+    width: 100px;
     align-self: center;
-    
+    display: table;
+    text-align: center;
 }
-/* Sign-Up */
 .sign-up{
     padding: 5px;
     border: 2px solid rgb(97, 198, 146);
     border-radius: 10%;
     box-shadow: -3px 3px 3px 1px rgb(62,62, 62);
     font-family: 'Space Grotesk';
+    height: 50px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .sign-up:hover{

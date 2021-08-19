@@ -4,17 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter} from "react-router-dom";
 import { createBrowserHistory } from "history";
 import store from "./ducks/store";
+const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter
 const customHistory = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <HashRouter history={customHistory}>
-        <App />
-      </HashRouter>
+      <Router>
+        <HashRouter history={customHistory}>
+          <App />
+        </HashRouter>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
